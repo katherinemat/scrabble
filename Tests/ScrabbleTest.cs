@@ -12,7 +12,6 @@ namespace ScrabbleScore.Objects
     //   string userInput = "a";
     //   Scrabble newScrabble = new Scrabble(userInput);
     //   string userOutput = newScrabble.Score();
-    /
     //   Assert.Equal("A", userOutput);
     // }
     [Fact]
@@ -34,7 +33,7 @@ namespace ScrabbleScore.Objects
     [Fact]
     public void InputMultipleLetters_CheckArrays_ReturnTotalScore()
     {
-      string userInput = "doge";
+      string userInput = "d'oge";
       Scrabble newScrabble = new Scrabble(userInput);
       int userOutput = newScrabble.Score();
       Assert.Equal(6, userOutput);

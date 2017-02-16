@@ -15,14 +15,23 @@ namespace ScrabbleScore.Objects
     //   Console.WriteLine(userOutput);
     //   Assert.Equal("A", userOutput);
     // }
+    // [Fact]
+    // public void InputLetter_InputA_ReturnLetterValue()
+    // {
+    //   string userInput = "u";
+    //   Scrabble newScrabble = new Scrabble(userInput);
+    //   int userOutput = newScrabble.Score();
+    //   Console.WriteLine(userOutput);
+    //   Assert.Equal(1, userOutput);
+    // }
     [Fact]
-    public void InputLetter_InputA_ReturnLetterValue()
+    public void InputMultipleLetters_CheckArrays_ReturnTotalScore()
     {
-      string userInput = "a";
+      string userInput = "uae";
       Scrabble newScrabble = new Scrabble(userInput);
       int userOutput = newScrabble.Score();
       Console.WriteLine(userOutput);
-      Assert.Equal(1, userOutput);
+      Assert.Equal(3, userOutput);
     }
   }
 }

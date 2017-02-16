@@ -24,9 +24,14 @@ namespace ScrabbleScore.Objects
 
     public int Score()
     {
-        if(_input[0] == _one[0])
+        for(int i = 0; i < _one.Length; i++)
         {
-            _score += 1;
+            for (int j = 0; j < _input.Length; j++) {
+                if(_input[j] == _one[i])
+                {
+                    _score += 1;
+                }
+            }
         }
         return _score;
     }
